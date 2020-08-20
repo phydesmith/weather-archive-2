@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+
+<?import javafx.scene.image.ImageView?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="io.javasmithy.PrimaryController"
+            prefHeight="600.0" prefWidth="600.0">
+
+    <Label fx:id="forecastHeader"
+           text="Forecast"
+           prefHeight="100"
+           prefWidth="200"
+           AnchorPane.topAnchor="10"
+           AnchorPane.leftAnchor="25"/>
+
+    <Label fx:id="forecastBody"
+           text="Placeholder"
+           prefHeight="200"
+           prefWidth="400"
+           AnchorPane.topAnchor="110"
+           AnchorPane.leftAnchor="25"/>
+
+    <Label fx:id="temperature"
+           text="XY Degrees"
+           prefHeight="100"
+           prefWidth="100"
+           AnchorPane.topAnchor="330"
+           AnchorPane.leftAnchor="250"/>
+
+    <Label fx:id="searchPrompt"
+           text="Search: "
+           prefHeight="25"
+           prefWidth="50"
+           AnchorPane.topAnchor="450"
+           AnchorPane.leftAnchor="250"/>
+
+
+    <ImageView fx:id="forecastImageView"
+               fitHeight="100"
+               fitWidth="100"
+               AnchorPane.topAnchor="330"
+               AnchorPane.leftAnchor="25"/>
+
+    <TextField fx:id="searchTextField"
+               prefHeight="25"
+               prefWidth="50"
+               AnchorPane.topAnchor="450"
+               AnchorPane.leftAnchor="310"/>
+
+    <Button fx:id="searchButton"
+            text="Search"
+            onAction="#search"
+            prefHeight="25"
+            prefWidth="100"
+            AnchorPane.topAnchor="480"
+            AnchorPane.leftAnchor="250"/>
+
+</AnchorPane>
